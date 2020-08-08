@@ -1,0 +1,21 @@
+{% block app_content %}
+{% include 'components/header.html' %}
+
+<div class="card margin-t">
+    <div id="demoMap" class="margin-b" style="height:300px"></div>
+    
+    <label>Search place</label>
+    <input type="text">
+
+    <a class="button center margin-t" href="{{url_for('pages.creator')}}">Continue</a>
+</div>
+
+<script src="{{url_for('static',filename='js/OpenLayers.js')}}"></script>
+<script>
+    map = new OpenLayers.Map("demoMap");
+    map.addLayer(new OpenLayers.Layer.OSM());
+    map.zoomToMaxExtent();
+</script>
+
+
+{% endblock %} 

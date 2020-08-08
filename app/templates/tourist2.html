@@ -1,0 +1,25 @@
+{% block app_content %}
+{% include 'components/header.html' %}
+
+    <div class="card margin-t">
+        <h3>Answer to these questions for finding the best gems</h3>
+
+        <label for="ex">Experience level with hiking</label>
+        <select class="margin-b" name="ex">
+        <option value="volvo"> low </option>
+        <option value="saab"> medium </option>
+        <option value="mercedes"> high </option>
+        </select>
+
+        <label for="pref">Why do you like visiting new mountain places?</label>
+        <select name="pref">
+        <option value="volvo"> Sport activity </option>
+        <option value="saab"> Taking pictures and videos </option>
+        <option value="mercedes"> The quiet and calm </option>
+        <option value="audi"> Other </option>
+        </select>
+
+        <a class="button center margin-t" href="{{ url_for('pages.tourist') }}">CONTINUE</a>
+
+    </div>
+{% endblock %} 

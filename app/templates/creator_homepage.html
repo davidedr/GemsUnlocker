@@ -1,0 +1,36 @@
+{% block app_content %}
+    {% include 'components/header.html' %}
+
+
+    <div class="margin-t margin-b">
+        <img src="https://www.baitavalon.it/filemanager/files/img-principale/baita-montagna-trentino.jpg" style="width: 100%;border-radius: var(--border-radius-el);">
+    </div>
+    
+
+    <div class="card">
+        <h2>Mountain hut</h2>
+        <p>Bio della propria baita</p>
+    </div>
+
+    <div class="card margin-t">
+        <div>
+            <h3 class="left" style="width:70%">Your gems</h3>
+            <h3 class="right" style="float:right"><a href="{{url_for('pages.add_gem')}}">+</a></h3>
+        </div>
+        
+
+        <div class="col-2">
+        <div class="gem">
+            <div class="photo" style="background:url('https://www.altoadigewines.com/images/content/111083_12843_3_C_1920_1080_2106_3712679/winegrowing-region.jpg')"></div>
+            <p>First gem</p>
+        </div>
+
+        <div class="gem">
+            <div class="photo" style="background:url('https://www.altoadigewines.com/images/content/111083_12843_3_C_1920_1080_2106_3712679/winegrowing-region.jpg')"></div>
+            <p>Second gem</p>
+        </div>
+    </div>
+    </div>
+
+
+{% endblock %}

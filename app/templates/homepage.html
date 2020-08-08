@@ -1,0 +1,28 @@
+{% block app_content %}
+    {% include 'components/header.html' %}
+    
+    <div class="card center">
+    <div class="fullWidth center">
+        <!-- <img src="{{url_for('static', filename='images/Logo.svg')}}"> -->
+        <p class="center">Sei un Creator o un Turista?</p>
+    </div>
+
+
+    <div class="col-2 margin-b">
+        <a class="left" href="{{ url_for('pages.creator_steps', step=1) }}">
+            <img class="center margin-b" src="{{url_for('static', filename='images/Creator.svg')}}">
+            <button class="center margin-b">Creator</button>
+        </a>
+        <a class="left" href="{{ url_for('pages.tourist_steps', step=1) }}">
+            <img class="center margin-b" src="{{url_for('static', filename='images/Turista.svg')}}">
+            <button class="center">Turista</button>
+        </a>
+    </div>
+
+    <div class="clear">
+        <button class="center">Sono solo curioso, vorrei esplorare prima</button>
+    </div
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,36 @@
+nav {
+  background: var(--color-background-dark);
+  padding: var(--padding-el);
+  height: 40px;
+  border-radius: var(--border-radius-el); }
+  nav .logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 100%; }
+
+.card {
+  overflow: auto;
+  padding: var(--padding-el);
+  border-radius: var(--border-radius-el);
+  background: var(--color-text-neg); }
+
+.gem .photo {
+  width: 100px;
+  height: 100px;
+  border-radius: var(--border-radius-el);
+  background-size: cover; }
+
+.menubar {
+  background: var(--color-background-dark);
+  padding: var(--padding-el);
+  height: 40px;
+  border-radius: var(--border-radius-el);
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  right: 10px;
+  left: 10px;
+  color: var(--color-text-neg); }
+
+/*# sourceMappingURL=components.css.map */

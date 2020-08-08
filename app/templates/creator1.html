@@ -1,0 +1,16 @@
+{% block app_content %}
+{% include 'components/header.html' %}
+
+    <div class="center card margin-t">
+        <p> Per poterti consigliare al meglio abbiamo bisogno di collegare le informazioni che raccogliamo ad un account, ci vorrà poco 😉 </p>
+
+        <button class="center"><a href="{{ url_for('pages.creator_steps', step=2) }}">ISCRIVITI</a></button>
+        
+        <p> Oppure collegati con Google o Facebook se vuoi fare più veloce </p>
+
+        <div class="center">
+            <a href="{{ url_for('pages.creator_steps', step=2) }}"><img src="{{url_for('static', filename='images/Google.svg')}}" style="height: 30px;"></a>
+            <a href="{{ url_for('pages.creator_steps', step=2) }}"><img src="{{url_for('static', filename='images/FB.svg')}}" style="height: 30px;"></a>
+        </div>
+    </div>
+{% endblock %} 

@@ -1,0 +1,37 @@
+{% block app_content %}
+{% include 'components/header.html' %}
+    <div class="card margin-t">
+        <h3 class="center"> Some questions to show the best gems for you </h3>
+
+        <p class="center"> Che tipologie di attrazioni ti interessano particolarmente? </p>
+        
+       
+            <div class="col-3 margin-b">
+                <a  class="margin-b" href="{{ url_for('pages.tourist_steps', step=2) }}">
+                    <img class="center margin-b" src="{{url_for('static', filename='images/Monti.svg')}}">
+                    <button class="center margin-b">Montagne</button>
+                </a>
+                <a  class="margin-b" href="{{ url_for('pages.tourist_steps', step=2) }}">
+                    <img class="center margin-b" src="{{url_for('static', filename='images/Musei.svg')}}">
+                    <button class="center">Musei</button>
+                </a>
+                <a  class="margin-b" href="{{ url_for('pages.tourist_steps', step=2) }}">
+                    <img class="center margin-b" src="{{url_for('static', filename='images/Lake.svg')}}">
+                    <button class="center">Laghi</button>
+                </a>
+           
+
+            
+                <a  class="margin-b" href="{{ url_for('pages.tourist_steps', step=2) }}">
+                    <img class="center margin-b" src="{{url_for('static', filename='images/Monti.svg')}}">
+                    <button class="center margin-b">Altro 1</button>
+                </a>
+                <a  class="margin-b" href="{{ url_for('pages.tourist_steps', step=2) }}">
+                    <img class="center margin-b" src="{{url_for('static', filename='images/Musei.svg')}}">
+                    <button class="center">Altro 2</button>
+                </a>
+            </div>
+
+            <a class="button center clear" href="{{url_for('pages.tourist_steps',step=2)}}">CONTINUE</a>
+    </div>
+{% endblock %} 

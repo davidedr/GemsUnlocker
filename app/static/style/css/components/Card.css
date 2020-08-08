@@ -1,0 +1,7 @@
+.card {
+  overflow: auto;
+  padding: var(--padding-el);
+  border-radius: var(--border-radius-el);
+  background: var(--color-text-neg); }
+
+/*# sourceMappingURL=Card.css.map */

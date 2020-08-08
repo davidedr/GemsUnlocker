@@ -1,0 +1,21 @@
+button, a.button {
+  padding: var(--padding-el);
+  border-radius: var(--border-radius-el);
+  background: var(--color-accent);
+  color: var(--color-neg);
+  border: none; }
+
+a {
+  text-decoration: none; }
+
+input[type=text] {
+  width: 100%;
+  padding: var(--padding-el);
+  font-size: 16px; }
+
+select {
+  width: 100%;
+  padding: var(--padding-el);
+  font-size: 16px; }
+
+/*# sourceMappingURL=atom.css.map */

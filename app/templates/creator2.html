@@ -1,0 +1,25 @@
+{% block app_content %}
+{% include 'components/header.html' %}
+<div class="margin-t margin-b">
+    <img src="https://www.baitavalon.it/filemanager/files/img-principale/baita-montagna-trentino.jpg" style="width: 100%;border-radius: var(--border-radius-el);">
+</div>
+
+    <div class="card">
+        <h3>Insert information about your business</h3>
+        <label>Name business</label>
+        <input class="margin-b" type="text"> 
+
+        <label>Description</label>
+        <input class="margin-b" type="text"> 
+
+        <label for="revenue">Yearly revenue</label>
+        <select name="revenue">
+        <option value="volvo"> < 20000 </option>
+        <option value="saab"> < 20000 </option>
+        <option value="mercedes"> < 20000 </option>
+        <option value="audi"> < 20000 </option>
+        </select>
+
+        <a class="button center margin-t" href="{{ url_for('pages.creator_steps', step=3) }}">CONTINUE</a>
+    </div>
+{% endblock %} 

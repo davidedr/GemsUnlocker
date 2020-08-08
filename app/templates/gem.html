@@ -1,0 +1,56 @@
+{% block app_content %}
+    {% include 'components/header.html' %}
+
+    <div class="margin-t margin-b">
+        <img src="https://www.italyfamilyhotels.it/wp-content/uploads/2016/03/regione-trentino1.jpg" style="width: 100%;border-radius: var(--border-radius-el);">
+    </div>
+    
+
+    <div class="card">
+        <h2>Bellissima gemma</h2>
+        <p>Descrizione gemma</p>
+
+        <hr>
+        <p><b>Category</b> Lawns</p>
+        <p><b>Difficulty to reach</b> Low</p>
+    </div>
+
+    <div class="card margin-t">
+        <div id="demoMap" class="margin-b" style="height:150px"></div>
+    
+        <a class="button center margin-t">SEE ON MAP</a>
+    </div>
+    
+    <script src="{{url_for('static',filename='js/OpenLayers.js')}}"></script>
+    <script>
+        map = new OpenLayers.Map("demoMap");
+        map.addLayer(new OpenLayers.Layer.OSM());
+        map.zoomToMaxExtent();
+    </script>
+
+    <div class="card margin-t">
+        <h3>Other gems nearby</h3>
+        <div class="col-2">
+            <a class="gem" href="{{url_for('pages.gem')}}">
+                <div class="photo" style="background:url('https://www.altoadigewines.com/images/content/111083_12843_3_C_1920_1080_2106_3712679/winegrowing-region.jpg')"></div>
+                <p>First gem</p>
+            </a>
+    
+            <a class="gem" href="{{url_for('pages.gem')}}">
+                <div class="photo" style="background:url('https://www.altoadigewines.com/images/content/111083_12843_3_C_1920_1080_2106_3712679/winegrowing-region.jpg')"></div>
+                <p>First gem</p>
+            </a>
+        </div>    
+    </div>
+
+    <div class="card margin-t" style="margin-bottom:200px">
+        <h3>Mountain hut</h3>
+        <p>Description creator</p>
+
+        <a class="button">SEE GEM CREATOR</a>
+    </div>
+
+    
+
+    {% include 'components/menubar.html' %}
+    {% endblock %}

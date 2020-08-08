@@ -1,0 +1,45 @@
+{% block app_content %}
+    {% include 'components/header.html' %}
+
+    <div class="card margin-t">
+        <div>
+            <h3 class="left" style="width:70%">Gems based on your location</h3>
+            <a class="right" style="float:right">Show more</a>
+        </div>
+        
+
+        <div class="col-2">
+        <a class="gem" href="{{url_for('pages.gem')}}">
+            <div class="photo" style="background:url('https://www.altoadigewines.com/images/content/111083_12843_3_C_1920_1080_2106_3712679/winegrowing-region.jpg')"></div>
+            <p>First gem</p>
+        </a>
+
+        <a class="gem" href="{{url_for('pages.gem')}}">
+            <div class="photo" style="background:url('https://www.altoadigewines.com/images/content/111083_12843_3_C_1920_1080_2106_3712679/winegrowing-region.jpg')"></div>
+            <p>First gem</p>
+        </a>
+    </div>
+    </div>
+
+    <div class="card margin-t">
+        <div>
+            <h3 class="left" style="width:70%">Gems based on your interests</h3>
+            <a class="right" style="float:right">Show more</a>
+        </div>
+        
+
+        <div class="col-2">
+            <a class="gem" href="{{url_for('pages.gem')}}">
+                <div class="photo" style="background:url('https://www.altoadigewines.com/images/content/111083_12843_3_C_1920_1080_2106_3712679/winegrowing-region.jpg')"></div>
+                <p>First gem</p>
+            </a>
+
+            <a class="gem" href="{{url_for('pages.gem')}}">
+                <div class="photo" style="background:url('https://www.altoadigewines.com/images/content/111083_12843_3_C_1920_1080_2106_3712679/winegrowing-region.jpg')"></div>
+                <p>First gem</p>
+            </a>
+    </div>
+    </div>
+
+    {% include 'components/menubar.html' %}
+    {% endblock %}
